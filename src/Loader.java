@@ -5,6 +5,8 @@ public class Loader
     {
         Cat masha = new Cat();
         System.out.println(masha.getWeight());
+        masha.pee(20.0);
+        System.out.println(masha.getWeight());
         while (masha.getWeight() <= 5000)
         {
             masha.feed(20.0);
@@ -19,6 +21,8 @@ public class Loader
         }
         System.out.println(masha.getWeight());
         System.out.println(masha.getStatus());
+        System.out.println(masha.getTotalDrinkConsumed());
+        System.out.println(masha.getTotalFoodConsumed());
 
         /*Scanner in = new Scanner(System.in);
         //String str = new String();
